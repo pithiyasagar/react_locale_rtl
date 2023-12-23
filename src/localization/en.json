@@ -1,0 +1,13 @@
+{
+  "translation": {
+    "change_language": "Change Language",
+
+    "order_status": "Order Status",
+
+    "items": "Items",
+    "shipping": "Shipping",
+    "delivered": "Delivered",
+
+    "var_items_purchased": "{{items}} Items purchased"
+  }
+}

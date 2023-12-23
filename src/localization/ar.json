@@ -1,0 +1,13 @@
+{
+  "translation": {
+    "change_language": "تغيير اللغة",
+
+    "order_status": "حالة الطلب",
+
+    "items": "أغراض",
+    "shipping": "شحن",
+    "delivered": "تم التوصيل",
+
+    "var_items_purchased": "{{items}} عناصر تم شراؤها"
+  }
+}
