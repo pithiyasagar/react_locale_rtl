@@ -8,7 +8,7 @@ import HomeComponent from './HomeComponent';
 const HomeContainer = () => {
   const {t, i18n} = useTranslation();
 
-  const [isArabic, setIsArabic] = useState(true);
+  const [isArabic, setIsArabic] = useState(i18n.language == 'ar');
 
   const updateLanguage = (value: boolean) => {
     setIsArabic(value);
