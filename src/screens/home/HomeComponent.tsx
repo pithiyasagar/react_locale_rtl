@@ -13,8 +13,8 @@ const HomeComponent = (props: HomeProps) => {
 
   const {t} = useTranslation();
 
-  const renderItems = ({item}) => {
-    return <HomeItem item={item} />;
+  const renderItems = ({item}: {item: History}) => {
+    return <HomeItem history={item} />;
   };
 
   return (

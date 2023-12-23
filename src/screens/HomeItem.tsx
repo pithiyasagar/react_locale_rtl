@@ -2,11 +2,12 @@ import {Image, Text, View} from 'react-native';
 import {useTranslation} from 'react-i18next';
 
 import styles from './home/styles';
+import {History} from './home/History';
 
-const HomeItem = ({item}) => {
+const HomeItem = ({history}: {history: History}) => {
   const {t} = useTranslation();
 
-  const {id, image_url, status, items} = item
+  const {id, image_url, status, items} = history;
 
   return (
     <View style={styles.itemContainer}>

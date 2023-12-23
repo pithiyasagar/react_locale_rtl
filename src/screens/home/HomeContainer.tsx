@@ -8,16 +8,17 @@ import HomeComponent from './HomeComponent';
 const HomeContainer = () => {
   const {t, i18n} = useTranslation();
 
-  const [isArabic, setIsArabic] = useState(false);
+  const [isArabic, setIsArabic] = useState(true);
 
-  useEffect(() => {
+  const updateLanguage = (value: boolean) => {
+    setIsArabic(value);
     i18n.changeLanguage(i18n.language === 'ar' ? 'en' : 'ar').then(() => {
       I18nManager.forceRTL(i18n.language === 'ar');
-      // RNRestart.Restart();
+      RNRestart.Restart();
     });
-  }, [isArabic]);
+  };
 
-  return <HomeComponent isArabic={isArabic} setIsArabic={setIsArabic} />;
+  return <HomeComponent isArabic={isArabic} setIsArabic={updateLanguage} />;
 };
 
 export default HomeContainer;
