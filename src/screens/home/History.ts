@@ -3,4 +3,7 @@ export interface History {
   image_url: string;
   status: string;
   items: string;
+  timestamp: string;
+  amount: number;
+  description: string;
 }

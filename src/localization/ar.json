@@ -2,6 +2,8 @@
   "translation": {
     "change_language": "تغيير اللغة",
 
+    "order_date_var": "تاريخ الطلب: {{date}}",
+
     "order_status": "حالة الطلب",
 
     "items": "أغراض",
